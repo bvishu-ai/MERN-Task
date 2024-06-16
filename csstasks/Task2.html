@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Task 2</title>
+    <style>
+      .vnav {
+        background-color: lightblue;
+        display: inline-block;
+      }
+
+      .hnav {
+        background-color: lightgray;
+        width: 38%;
+      }
+
+      h1 {
+        background-color: aquamarine;
+        padding: 0.5rem;
+        border: 0.06rem solid black;
+        text-align: center;
+        color: maroon;
+      }
+
+      #vitem {
+        font-size: 200%;
+        width: 100%;
+      }
+
+      #hitem {
+        font-size: 200%;
+        width: 100%;
+        display: inline;
+        padding-right: 10px;
+        color: blue;
+      }
+
+      #vitem:hover {
+        background-color: rgb(236, 204, 24);
+      }
+
+      #hitem:hover {
+        background-color: gray;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Task 2</h1>
+    <h3>Vertical Navigation Bar</h3>
+    <div class="vnav">
+      <div id="vitem">Home</div>
+      <div id="vitem">Java</div>
+      <div id="vitem">CSS</div>
+      <div id="vitem">HTML</div>
+      <div id="vitem">Bootsrap</div>
+    </div>
+
+    <h3>Horizontal Navigation Bar</h3>
+    <div class="hnav">
+      <div id="hitem">Home</div>
+      <div id="hitem">|</div>
+      <div id="hitem">Java</div>
+      <div id="hitem">|</div>
+      <div id="hitem">CSS</div>
+      <div id="hitem">|</div>
+      <div id="hitem">HTML</div>
+      <div id="hitem">|</div>
+      <div id="hitem">Bootsrap</div>
+      <div id="hitem">|</div>
+    </div>
+  </body>
+</html>

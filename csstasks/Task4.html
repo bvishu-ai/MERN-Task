@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Task 4</title>
+    <style>
+      h1 {
+        background-color: aquamarine;
+        padding: 0.5rem;
+        border: 0.06rem solid black;
+        text-align: center;
+        color: maroon;
+      }
+      #mySidenav a {
+        position: absolute;
+        left: -80px;
+        transition: 0.3s;
+        padding: 15px;
+        width: 100px;
+        text-decoration: none;
+        font-size: 20px;
+        color: white;
+        border-radius: 0 5px 5px 0;
+      }
+
+      #mySidenav a:hover {
+        left: 0;
+      }
+
+      #html {
+        top: 100px;
+        background-color: rgb(13, 141, 17);
+      }
+
+      #css {
+        top: 160px;
+        background-color: rgb(30, 190, 243);
+      }
+
+      #bs {
+        top: 220px;
+        background-color: rgb(245, 88, 41);
+      }
+
+      #js {
+        top: 280px;
+        background-color: rgb(75, 75, 75);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Task 4</h1>
+    <div id="mySidenav" class="sidenav">
+      <a href="https://en.wikipedia.org/wiki/HTML" target="_blank" id="html"
+        >HTML</a
+      >
+      <a href="https://en.wikipedia.org/wiki/CSS" target="_blank" id="css"
+        >CSS</a
+      >
+      <a
+        href="https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)"
+        target="_blank"
+        id="bs"
+        >Bootstrap</a
+      >
+      <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank" id="js"
+        >Javascript</a
+      >
+    </div>
+
+    <div style="margin-left: 80px">
+      <h2>Hoverable Sidenav Buttons</h2>
+      <p>Hover over the buttons in the left side navigation to open them.</p>
+    </div>
+  </body>
+</html>
