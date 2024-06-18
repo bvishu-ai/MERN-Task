@@ -1,0 +1,37 @@
+.card-deck {
+  padding-top: 20px;
+}
+
+h1 {
+  padding-top: 30px;
+  text-align: center;
+  font-weight: bold;
+}
+
+p {
+  text-align: center;
+  padding-top: 10px;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+.btn {
+  background: #069;
+  padding: 10px;
+  color: #fff;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+button.btn {
+  margin-top: auto;
+}
+
+button:hover {
+  color: #069;
+  background-color: white;
+  border: 1px solid #069;
+}
