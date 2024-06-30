@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Task 4</title>
+  </head>
+  <body>
+    <h2>Show Date and Time</h2>
+
+    <button onclick="showDate()">Show Date</button>
+    <p id="dateOutput"></p>
+
+    <button onclick="showTime()">Show Time</button>
+    <p id="timeOutput"></p>
+
+    <script>
+      function showDate() {
+        // Get the current date
+        let currentDate = new Date();
+        let formattedDate = `${currentDate.getDate()}/${
+          currentDate.getMonth() + 1
+        }/${currentDate.getFullYear()}`;
+        document.getElementById("dateOutput").innerText = `${formattedDate}`;
+      }
+
+      function showTime() {
+        // Get the current time
+        let currentTime = new Date();
+        document.getElementById("timeOutput").innerText = `${currentTime}`;
+      }
+    </script>
+  </body>
+</html>

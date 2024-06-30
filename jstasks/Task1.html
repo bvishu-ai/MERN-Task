@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Task 1</title>
+  </head>
+  <body>
+    <h1>Reversing Numbers</h1>
+    <p style="font-weight: bold">Original:-</p>
+    <p>123 789123</p>
+    <p style="font-weight: bold">Resultant:-</p>
+    <script>
+      function reverseNumber(num) {
+        let numStr = num.toString();
+        let reversedStr = numStr.split("").reverse().join("");
+        let reversedNum = parseInt(reversedStr);
+        return reversedNum;
+      }
+
+      // Usage:
+      document.write(reverseNumber(123));
+      console.log(reverseNumber(123)); // Output: 321
+      document.write(" " + reverseNumber(789123));
+      console.log(reverseNumber(789123)); // Output: 321987
+    </script>
+  </body>
+</html>

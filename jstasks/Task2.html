@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Task 2</title>
+  </head>
+  <body>
+    <h1>Sorting the characters of a String</h1>
+    <p style="font-weight: bold">Original:-</p>
+    <p>vishalb</p>
+    <p style="font-weight: bold">Resultant:-</p>
+    <script>
+      function alphabetizeString(str) {
+        let charArray = str.split("");
+        // Sort the array alphabetically
+        charArray.sort();
+        // Join the sorted array back into a string
+        let sortedString = charArray.join("");
+        return sortedString;
+      }
+
+      // Example usage:
+      let inputString = "vishalb";
+      let sortedString = alphabetizeString(inputString);
+      document.write(alphabetizeString("vishalb"));
+      console.log(sortedString); // Output: 'abhilsv'
+    </script>
+  </body>
+</html>
